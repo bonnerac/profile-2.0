@@ -97,9 +97,24 @@ body {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-#panel-two{
-  background-color: orange;
-}
+
+#ttbvideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  }
+
+ 
 #panel-three{
   background-image: url("./vintage-piano-keys.jpg");
   background-position: center;
@@ -135,13 +150,6 @@ body {
   cursor: pointer;
   font-weight: bold;
 
-}
-#panel-four{
-  background-color: yellow;
-}
-#panel-five{
-  background-color: green;
-  
 }
 
 
