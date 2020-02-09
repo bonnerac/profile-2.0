@@ -101,7 +101,40 @@ body {
   background-color: orange;
 }
 #panel-three{
-    background-color: blueviolet;
+  background-image: url("./vintage-piano-keys.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.keys{
+  color: darkred;
+  position: absolute;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 60px;
+}
+#key1{
+  transform: rotate(90deg);
+  top: 47%;
+  left: 19%;
+}
+#key2{
+  transform: rotate(88deg);
+  top: 40%;
+  left: 39.5%;
+}
+#key3{
+  transform: rotate(83deg);
+  top: 35%;
+  left: 62.5%;
+}
+.keys:hover{
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+
 }
 #panel-four{
   background-color: yellow;
@@ -111,57 +144,6 @@ body {
   
 }
 
-#card-about-me{
-  height: 500px;
-  background-color: red;
-  padding: 15px;
-  cursor: pointer;
-  
-}
-#card-about-me:hover .overlay {
-  opacity: 1;
-}
-#card-contact{
-  height: 500px;
-  background-color: yellow;
-  padding: 15px; 
-  margin-top: 200px;
-  cursor: pointer;
-}
-#card-contact:hover .overlay {
-  opacity: 1;
-}
-#card-portfolio{
-  height: 500px;
-  background-color: blue;
-  padding: 15px; 
-  cursor: pointer;
-}
-#card-portfolio:hover .overlay {
-  opacity: 1;
-}
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
 
 .text {
   color: black;

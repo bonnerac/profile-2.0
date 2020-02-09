@@ -26,7 +26,7 @@ $("#play").click(function () {
         scrollTop: 802
     }, 2000);
 })
-$(".clicker-two").click(function () {
+$("#key2").click(function () {
     $('html, body').animate({
         scrollTop: 1604
     }, 2000);
@@ -36,12 +36,12 @@ $("#back-horiz").click(function () {
         scrollTop: 802
     }, 2000);
 })
-$("#card-about-me").click(function () {
+$("#key1").click(function () {
     $('html, body').animate({
         scrollLeft: 0
     }, 2000);
 })
-$("#card-portfolio").click(function () {
+$("#key3").click(function () {
     $('html, body').animate({
         scrollLeft: 2736
     }, 2000);
