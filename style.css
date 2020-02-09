@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+ /* overflow: hidden; */
+}
+body {
+  height: 100vh;
+  width: 100%;
+  
+}
+#site-holder {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-size: 0;
+}
+.panel {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  padding: 30px 60px 30px 60px;
+}
+
+#panel-one{
+    background-color: black;
+}
+#panel-two{
+  background-color: orange;
+}
+#panel-three{
+    background-color: blueviolet;
+}
+#panel-four{
+  background-color: yellow;
+}
+#panel-five{
+  background-color: green;
+  
+}
+#button {
+  background: green;
+  border: none;
+  border-radius: 25px;
+  color: snow; 
+  cursor: pointer;
+  font-size: 1.25em;
+  letter-spacing: .1em;
+  outline: none;
+  padding: .75em 2em;
+  position: relative; 
+  text-transform: uppercase;
+  margin: auto;
+  top:40%; 
+  left:40%;
+}
+
+#button::before {
+  background: green;
+  border-radius: inherit;
+  content: '';
+  filter: blur(10px); 
+  opacity: .75;
+  position: absolute;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1; 
+}
+#button:hover::before {
+  filter: blur(20px); 
+  opacity: 1;
+}
+@keyframes glow {
+  0% {
+    background: green
+  }
+  25% {
+    background: lightgreen
+  }
+  100% {
+    background: green
+  }
+}
+#button:hover {
+  animation: glow 3s ease-in infinite;
+}
+
+#card-about-me{
+  height: 500px;
+  background-color: red;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+#card-about-me:hover .overlay {
+  opacity: 1;
+}
+#card-contact{
+  height: 500px;
+  background-color: yellow;
+  padding: 15px; 
+  margin-top: 200px;
+  cursor: pointer;
+}
+#card-contact:hover .overlay {
+  opacity: 1;
+}
+#card-portfolio{
+  height: 500px;
+  background-color: blue;
+  padding: 15px; 
+  cursor: pointer;
+}
+#card-portfolio:hover .overlay {
+  opacity: 1;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+#back-horiz{
+  height: 80x;
+  background-color: yellow;
+  text-align: center;
+  cursor: pointer;
+}
+#back-vert-two{
+  margin-top: 160px;
+  width: 100px;
+  height: 400px;
+  background-color:red;
+  cursor: pointer;
+  text-align: center;
+  padding: 140px 10px 0px 0px
+}
+#back-vert-one{
+  margin-top: 160px;
+  margin-left: 150px;
+  width: 100px;
+  height: 400px;
+  background-color:red;
+  cursor: pointer;
+  padding: 140px 0px 0px 10px
+}

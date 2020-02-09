@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="site-holder">
+        <div class="panel">TEST!!!</div>
+        <div class="panel" id="panel-one">
+            <button id="button">ENTER</button>
+        </div>
+        <div class="panel ">TEST2</div>
+    </div>
+    <div id="site-holder">
+        <div class="panel" id="panel-two">
+            <div class="row">
+                <div class="col s9"></div>
+                <div class="col s3" id="back-vert-one" data-aos="fade-right" data-aos-duration="3000">
+                    <i class="large material-icons">arrow_forward</i>
+                </div>
+            </div>
+        </div>
+        <div class="panel" id="panel-three">
+            <div class="row">
+                <div class="col s3 text" id="card-about-me" data-aos="fade-down" data-aos-duration="3000">
+                    About Me
+                    <div class="overlay">
+                        <img src="https://picsum.photos/300/500" alt="">
+                    </div>
+                </div>
+                <div class="col s1"></div>
+                <div class="col s3 text" id="card-contact" data-aos="fade-up" data-aos-duration="3000">
+                    Contact
+                    <div class="overlay clicker-two">
+                        <img src="https://picsum.photos/300/500" alt="">
+                    </div>
+                </div>
+                <div class="col s1"></div>
+                <div class="col s3 text" id="card-portfolio" data-aos="fade-down" data-aos-duration="3000">
+                    Portfolio
+                    <div class="overlay">
+                        <img src="https://picsum.photos/300/500" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel" id="panel-four">
+            <div class="row">
+                <div class="col s3" id="back-vert-two" data-aos="fade-left" data-aos-duration="3000">
+                    <i class="large material-icons">arrow_back</i>
+                </div>
+                <div class="col s9"></div>
+            </div>
+        </div>
+    </div>
+    <div id="site-holder">
+        <div class="panel"></div>
+        <div class="panel" id="panel-five">
+            <div class="row">
+                <div class="col s3">
+                </div>
+                <div class="col s6" id="back-horiz" data-aos="fade-up" data-aos-duration="3000">
+                    <i class="large material-icons">arrow_upward</i>
+                </div>
+                <div class="col s3">
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col s2"></div>
+                <form class="col s8">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="icon_email" type="email" class="validate">
+                            <label for="icon_email">Email</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="col s2"></div>
+            </div>
+        </div>
+        <div class="panel"></div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
