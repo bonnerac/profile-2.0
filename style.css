@@ -27,10 +27,13 @@ body {
 }
 
 #panel-test{
-  background-color: #666;
+  background-color: black;
 }
 #panel-one{
-  background-color: #666;
+ background-image: url(./80s\ background.png);
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 #boombox{
   position: relative;
@@ -182,3 +185,26 @@ body {
   cursor: pointer;
   padding: 140px 0px 0px 10px
 }
+@keyframes expand {
+  from{
+    font-size: 35px;
+    color: black;
+    top: 35%;
+    left: 137%;
+    font-family: 'Permanent Marker', cursive;
+  }
+  to{
+    font-size: 100px;
+    color: white;
+    top: 5%;
+    left: 132%;
+    font-family: "Astron Boy W05 Regular";
+  }
+}
+@font-face{
+  font-family:"Astron Boy W05 Regular";
+  src:url("./Astron\ Boy\ W05\ Regular.ttf");
+  }
+
+
+

@@ -1,6 +1,11 @@
-window.onload = function () {
+$(document).ready(function () {
     window.scrollTo(1368, 0);
-}
+})
+
+$(window).on('beforeunload', function () {
+    $(window).scrollTop(0);
+    $(window).scrollLeft(1368);
+});
 
 $("body").css("overflow", "hidden");
 
@@ -15,14 +20,11 @@ $("#play").on("click", function () {
     $("#tape").css("animation-iteration-count", "infinite")
     $("#play").css("animation", "shake 1s")
     $("#play").css("animation-iteration-count", "infinite")
-    $("#name").css("top", "0%")
-    $("#name").css("font-size", "70px")
-    $("#name").css("left", "133%")
-    $("#name").css("color", "white")
+    $("#name").css("animation", "expand 1s forwards")
 })
 
 $("#play").click(function () {
-    $('html, body').delay(2000).animate({
+    $('html, body').delay(3000).animate({
         scrollTop: 802
     }, 2000);
 })

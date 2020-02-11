@@ -42,6 +42,8 @@ My site is powered by the following technologies:
 
 * Scaling for Mobile: I'm still not sure how to take this design to mobile. I'm assuming it has to be totally redesigned for a smaller screen.
 
+* For some reason, when I refresh the page, it won't go back to my first section.
+
 ## Credits and Thanks
 
 Thanks to Colin for working with me on my site and introducing me to AOS. Thanks to Paul for working with me on my site and introducing me to Pixabay.
