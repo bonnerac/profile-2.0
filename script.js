@@ -53,7 +53,7 @@ $("#back-vert-two").click(function () {
         scrollLeft: 1368
     }, 2000);
 })
-$("#back-vert-one").click(function () {
+$(".arrow").click(function () {
     $('html, body').animate({
         scrollLeft: 1368
     }, 2000);
